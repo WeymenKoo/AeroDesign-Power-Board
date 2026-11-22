@@ -14,6 +14,7 @@ characterization: what it does, how close it is to its design, and where its lim
 | Original DVT/EOL test plan | [`bench_test/AeroDesign_PowerBoard_DVT_EOL_Test_Plan.xlsx`](bench_test/AeroDesign_PowerBoard_DVT_EOL_Test_Plan.xlsx) |
 | Automation scripts (PSU, scope, load) | [`bench_test/tools/`](bench_test/tools) |
 | Raw data and scope captures | [`bench_test/results/`](bench_test/results), [`bench_test/scope/`](bench_test/scope) |
+| Scope captures, labelled and annotated (all 35) | [`bench_test/scope_annotated/`](bench_test/scope_annotated) |
 | Probe and bodge-wire map | [`bench_test/probe_point_map.png`](bench_test/probe_point_map.png) |
 
 **Bench:**
@@ -78,6 +79,9 @@ The short-circuit test goes far beyond that. What is still untested is listed at
 
 ## Test cases
 
+Every scope capture below is the raw screenshot with a title, the test conditions, a channel legend (signal, probe point, scale) and call-outs added by [`annotate_scope.py`](bench_test/tools/annotate_scope.py). The originals are in [`bench_test/scope/`](bench_test/scope). Where the same run was also logged as data, its Python plot sits next to the capture.
+
+
 ### 1. Input protection thresholds
 **Method:** the supply is stepped 20 mV at a time with a 0.5 A load. VIN is measured at the board, and the
 input eFuse power-good flag marks the switching point. For reverse polarity, the supply leads are swapped and a
@@ -91,7 +95,9 @@ meter in series measures the current.
 
 | Input UVLO turn-on with 0.5 A load: clean, no chatter | Over-voltage trip at 24.9 V |
 |---|---|
-| ![](images/scope_uvlo_rise_0A5.png) | ![](images/scope_ovp_trip.png) |
+| ![B2.1 UVLO turn-on, annotated scope capture](bench_test/scope_annotated/B2.1_uvlo_rise.png) | ![B2.5 over-voltage trip, annotated scope capture](bench_test/scope_annotated/B2.5_ovp_trip.png) |
+| **UVLO turn-off** | **Over-voltage recovery at 23.0 V** |
+| ![B2.3 UVLO turn-off, annotated scope capture](bench_test/scope_annotated/B2.3_uvlo_fall.png) | ![B2.6 over-voltage recovery, annotated scope capture](bench_test/scope_annotated/B2.6_ovp_recover.png) |
 
 ### 2. Start-up and power sequencing
 **Method:** power is applied with a hand-touched + lead (ground fixed), as a battery plug-in would apply it.
@@ -105,7 +111,11 @@ All four rails are captured.
 - **Start-up into a 1.9 A load:** the rail is good at **9.3 ms (22 V) and 10.3 ms (7.4 V)**, with no restart.
   - At 7.4 V the input sags to 6.75 V, still 1.2 V above the UVLO turn-off.
 
-![Start-up at 12 V](images/startup.png)
+| Scope: 12 V, no load (annotated) | Logged data, same run |
+|---|---|
+| ![B3.4 start-up at 12 V, annotated scope capture](bench_test/scope_annotated/B3.4_12V_0A_opgd.png) | ![Start-up at 12 V, Python plot](images/startup.png) |
+
+Start-up into 1.9 A at 7.4 V, the worst case: [`B3.5_7V4_1A9_r2.png`](bench_test/scope_annotated/B3.5_7V4_1A9_r2.png).
 
 ### 3. Hot-plug overshoot
 **Method:** a live supply is touched onto the input, sampled at 3.2 ns with full bandwidth and no load.
@@ -115,7 +125,9 @@ All four rails are captured.
 - **Where it lands:** Q4's body diode then blocks reverse current, so the peak stays on U4's input, and the leads ring at about 2 MHz against D23.
 - **At 16.8 V (4S full charge):** VIN reaches **30.5 V**, on 30 V-rated parts. U4 is still off at that instant, so the buck FETs are not exposed.
 
-![Hot-plug overshoot](images/hotplug.png)
+| Scope: 16.8 V hot-plug (annotated) | Logged data, all three voltages |
+|---|---|
+| ![B3.6 hot-plug at 16.8 V, annotated scope capture](bench_test/scope_annotated/B3.6_hotplug_16.8V.png) | ![Hot-plug overshoot, Python plot](images/hotplug.png) |
 
 ### 4. Switch node
 **Result:**
@@ -125,9 +137,11 @@ All four rails are captured.
 - **The changeover** matches the 3.3 µH inductor's ≈ 2.9 A peak-to-peak ripple at 12 V in.
 - **Edge stress at 22 V:** the edge peaks at **23.4 V**, a 22 % margin to the 30 V FETs, and undershoots to -2.0 V (dead time).
 
-| 22 V, 1.9 A rising edge (1.25 GSa/s) | 12 V, no load: diode emulation |
+| 22 V, 1.9 A rising edge (1.25 GSa/s) | 22 V, 1.9 A falling edge (1.25 GSa/s) |
 |---|---|
-| ![](images/scope_sw_edge_22V_1A9.png) | ![](images/scope_sw_light_load_0A.png) |
+| ![B3.8 rising edge, annotated scope capture](bench_test/scope_annotated/B3.8_sw_rise_22V_1A9_1G25.png) | ![B3.8 falling edge, annotated scope capture](bench_test/scope_annotated/B3.8_sw_fall_22V_1A9_1G25.png) |
+| **12 V, 1.9 A: continuous, 308.8 kHz** | **12 V, no load: diode emulation** |
+| ![B3.7 switch-node frequency, annotated scope capture](bench_test/scope_annotated/B3.7_sw_freq_12V_1A9.png) | ![B3.9 switch node at no load, annotated scope capture](bench_test/scope_annotated/B3.9_sw_12V_0.0A.png) |
 
 ### 5. Efficiency and regulation
 **Method:** automatic sweep: 4 input voltages × 11 loads (0-1.9 A). Rails come from scope means, anchored to DMM
@@ -156,7 +170,9 @@ the ground loop. The noise floor was 2.5 mVpp.
 
 | 5V_PROT, 16.8 V / 1.9 A | VBUCK_OUT, 22 V / 1.9 A |
 |---|---|
-| ![](images/scope_ripple_5vprot_16V8_1A9.png) | ![](images/scope_ripple_vbuck_22V_1A9.png) |
+| ![B3.10 5V_PROT ripple, annotated scope capture](bench_test/scope_annotated/B3.10_vsrv_ripple_16V8_1A9.png) | ![B3.13 VBUCK_OUT ripple, annotated scope capture](bench_test/scope_annotated/B3.13_vbuck_ripple_22V_1A9.png) |
+| **Probe noise floor** | **Input ripple, 16.8 V / 1.9 A** |
+| ![B3.1 noise floor, annotated scope capture](bench_test/scope_annotated/B3.1_noisefloor.png) | ![B3.14 input ripple, annotated scope capture](bench_test/scope_annotated/B3.14_vin_ripple_16V8_1A9.png) |
 
 ### 7. Load step
 **Method:** the load's built-in square wave steps between 0.1 and 1.8 A (about 1.55 A), with edges of about 10 µs.
@@ -167,7 +183,11 @@ The scope averages 16 captures.
 - **Dip size:** **172 / 121 / 67 mV** at 7.4 / 16.8 / 22 V. It is largest at low VIN, where the inductor current can only ramp at (VIN - VOUT)/L ≈ 0.7 A/µs.
 - **Recovery:** 160-430 µs, slower than a 50 kHz crossover would give, so the loop is likely conservatively compensated.
 
-![Load step](images/loadstep.png)
+| Scope: 7.4 V, 0.1 → 1.8 A (annotated) | Logged data, all six steps |
+|---|---|
+| ![B3.19 load step at 7.4 V, annotated scope capture](bench_test/scope_annotated/B3.19_loadstep_7.4V_load.png) | ![Load step, Python plot](images/loadstep.png) |
+
+The other five steps: [`bench_test/scope_annotated/`](bench_test/scope_annotated/) (`B3.19_loadstep_*`).
 
 ### 8. Servo current sense
 **Result:**
@@ -189,17 +209,24 @@ The scope averages 16 captures.
 - **U1 trips at once** through its fast-trip path, rather than the 2 ms blanking used for overloads.
 - **It retries 5 times, then latches off.** The first retry comes after about 40 ms, the rest about 85 ms apart. A power-cycle recovers the board, with no damage.
 - **Each trip causes a load dump on VBUCK_OUT.** The inductor's stored energy (≈ ½ · 3.3 µH · 17.8 A² ≈ 0.5 mJ) has nowhere to go but C17-C21 (5 × 4.7 µF).
-  - Read off the capture below: VBUCK_OUT jumps to **≈ 8.9 V on the first trip and ≈ 11 V on every retry**.
-  - That is above U1's 7.93 V over-voltage threshold and **above the 10 V rating of C17-C21**.
+  - Read off run 2's capture (5 V/div, ±0.3 V): VBUCK_OUT jumps to **≈ 9.3 V on the first trip** and **9.6 to 11.3 V on the five retries**.
+  - Every one is above U1's 7.93 V over-voltage threshold, and **4 of the 5 retries go above the 10 V rating of C17-C21**.
+- **Two runs, and why both are shown:**
+  - Run 1 had VBUCK_OUT at 2 V/div. It went off the top of the screen, so its logged data flat-tops at 8.74 V. That is the scope's range, not the peak.
+  - Run 2 repeated the test at 5 V/div. Its waveform download failed (it saved only 20 ms before the trigger), so its screenshot is the record of the peaks.
 
-![Short circuit at 22 V: VBUCK_OUT (cyan, 5 V/div), 5V_PROT (magenta), OPGD (blue)](images/scope_short_circuit_22V.png)
+![B4.6 run 2: short circuit at 22 V, CH2 at 5 V/div, annotated scope capture](bench_test/scope_annotated/B4.6_short_22V_full_r2.png)
+
+Run 1, the logged data with the clipping marked ([raw capture](bench_test/scope_annotated/B4.6_short_22V_full.png)):
+
+![B4.6 run 1: logged data, VBUCK_OUT clipped at 8.74 V](bench_test/scope/B4.6_short_analysis.png)
 
 ## Findings
 
 | ID | Severity | Finding |
 |---|---|---|
 | F1 | **Major** | Hot-plug overshoot of 1.8× VIN: a 4S plug-in puts **30.5 V** on U4's input and 30 V parts. The D23 clamp (≈ 27-39 V) does not protect them. |
-| F2 | **Major** | Load dump on VBUCK_OUT at every servo eFuse trip: **≈ 11 V on 10 V-rated C17-C21**, above U1's 7.93 V over-voltage threshold. Too little buck-side capacitance. |
+| F2 | **Major** | Load dump on VBUCK_OUT at every servo eFuse trip: **up to ≈ 11.3 V on 10 V-rated C17-C21** (4 of 5 retries above 10 V), above U1's 7.93 V over-voltage threshold. Too little buck-side capacitance. |
 | F3 | **Major** | Current sense is 0.25 V/A (INA240A2 = 50 V/V; the design assumed 20 V/V). The FC ADC clips at **≈ 3.2 A** and sees > 3.3 V above that; the output saturates at ≈ 9.8 A. |
 | F4 | Moderate | 23.5 mΩ servo path after the feedback point: 50 mV droop at 1.9 A, about **0.35 V and 5 W at 15 A**. |
 | F5 | Minor | 5V_PROT ripple 14-15 mVpp against an 8 mV target, caused by capacitor DC-bias loss. |
