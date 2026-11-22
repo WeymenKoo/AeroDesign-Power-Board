@@ -1,0 +1,8 @@
+00:26:30  B3.7 skipped (done earlier); SW probe check Vpp 14.02 V
+00:26:37  scope capture saved: scope\B3.8_sw_edge_22V_1A9.png
+00:26:38  scope capture saved: scope\B3.8_sw_edge_22V_1A9.png
+00:26:39  scope capture saved: scope\B3.8_sw_edge_22V_1A9.png
+00:26:42  scope capture saved: scope\B3.8_sw_edge_22V_1A9.png
+00:26:47  scope capture saved: scope\B3.8_sw_edge_22V_1A9.png
+00:26:48  scope capture saved: scope\B3.8_sw_falling_22V_1A9.png
+00:26:58  ABORTED: PSU V 22.00 > 12.0

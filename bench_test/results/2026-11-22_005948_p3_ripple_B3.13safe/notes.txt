@@ -1,0 +1,2 @@
+01:00:04  scope capture saved: scope\B3.13_vbuck_ripple_22V_1A9.png
+01:00:09  RESULTS {"B3.13": {"where": "C21 (VBUCK)", "total_mVpp": 57.37, "fundamental_mVpp": 52.73, "f300k_mVpk": 24.21, "vin": 22.0, "iin": 0.473, "load": 1.891}}

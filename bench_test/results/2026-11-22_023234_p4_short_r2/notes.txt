@@ -1,0 +1,1 @@
+02:32:41  ABORTED: board not running normally before the short: {'ch1': 9.1213, 'ch2': 2.3533, 'ch3': 2.3517, 'ch4': 2.3045}

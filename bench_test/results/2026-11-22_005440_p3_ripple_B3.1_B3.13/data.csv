@@ -1,0 +1,2 @@
+t,step,where,total_mVpp,fundamental_mVpp,f300k_mVpk,vin,iin,load
+1795334103.414,B3.1_noisefloor,G2 = D24 right pad (big GND pad): BOTH the probe tip AND the spring on that same pad,2.46,0.98,0.11,16.8,0.61,1.89

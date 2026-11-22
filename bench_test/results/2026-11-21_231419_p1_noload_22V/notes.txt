@@ -1,0 +1,2 @@
+23:14:21  step 16.80 -> 22.00 V, limit 0.300 A
+23:14:37  Iin 18.0 mA at 22.00 V. PSU left ON for DMM readings.

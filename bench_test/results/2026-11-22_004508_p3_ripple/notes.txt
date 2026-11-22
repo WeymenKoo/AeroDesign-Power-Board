@@ -1,0 +1,4 @@
+00:45:21  scope capture saved: scope\B3.14_vin_ripple_16V8_1A9.png
+00:46:31  scope capture saved: scope\B3.1_noisefloor.png
+00:47:26  scope capture saved: scope\B3.10_vsrv_ripple_16V8_1A9.png
+00:47:46  scope capture saved: scope\B3.12_vsrv_ripple_22V_1A9.png

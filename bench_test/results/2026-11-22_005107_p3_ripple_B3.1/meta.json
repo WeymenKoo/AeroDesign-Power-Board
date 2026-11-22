@@ -1,0 +1,17 @@
+{
+  "name": "p3_ripple_B3.1",
+  "start": "2026-11-22 00:51:07",
+  "setup": "CH2 1x + ground spring held across the cap, AC, 20 MHz BW, 10 mV/div, 2 us/div; laptop on battery",
+  "results": {
+    "B3.1_noisefloor": {
+      "where": "its OWN spring: push the probe TIP onto the spring's ground tip, then rest it on C4 GND pad",
+      "total_mVpp": NaN,
+      "fundamental_mVpp": 21.6,
+      "f300k_mVpk": 1.08,
+      "vin": 16.8,
+      "iin": 0.016,
+      "load": 0.003
+    }
+  },
+  "end": "2026-11-22 00:51:41"
+}

@@ -1,0 +1,2 @@
+t,step,where,total_mVpp,fundamental_mVpp,f300k_mVpk,vin,iin,load
+1795333894.582,B3.1_noisefloor,"its OWN spring: push the probe TIP onto the spring's ground tip, then rest it on C4 GND pad",nan,21.6,1.08,16.8,0.016,0.003

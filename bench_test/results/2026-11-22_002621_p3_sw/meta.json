@@ -1,0 +1,24 @@
+{
+  "name": "p3_sw",
+  "start": "2026-11-22 00:26:21",
+  "probe_map": {
+    "CH1": "point 1 VIN",
+    "CH2": "point 3 SW, ground G3, full BW",
+    "CH3": "J4 VSRV",
+    "CH4": "point 11 OPGD"
+  },
+  "results": {
+    "B3.8": {
+      "vin": 22.0,
+      "load": 1.891,
+      "peak_max": 24.86,
+      "peak_median": 24.22,
+      "n": 20,
+      "undershoot_min": NaN,
+      "psu_v": 22.0,
+      "psu_i": 0.473,
+      "psu_i_max": 0.473
+    }
+  },
+  "end": "2026-11-22 00:26:58"
+}

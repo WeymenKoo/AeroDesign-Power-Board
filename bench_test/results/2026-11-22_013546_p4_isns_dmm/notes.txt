@@ -1,0 +1,1 @@
+01:36:42  RESULT {"0.0": {"iout": 0.0074, "dmm": 2.533, "ch4": 2.4877, "ch3": 5.0309, "ch4_vdiv": "2.000000E+00", "ch4_probe": "10"}, "1.9": {"iout": 1.8903, "dmm": 2.984, "ch4": 2.935, "ch3": 4.9813, "ch4_vdiv": "2.000000E+00", "ch4_probe": "10"}, "summary": {"dmm_rise": 0.451, "scope_rise": 0.4473, "dmm_VperA": 0.2386, "scope_VperA": 0.2366, "dmm_VperA_ratiometric": 0.2517}}

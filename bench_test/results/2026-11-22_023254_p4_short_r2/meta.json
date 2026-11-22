@@ -1,0 +1,48 @@
+{
+  "name": "p4_short_r2",
+  "start": "2026-11-22 02:32:54",
+  "probes": {
+    "CH1": "D23 top pad VIN",
+    "CH2": "VBUCK_OUT pad by L1",
+    "CH3": "J4 pin 1 5V_PROT",
+    "CH4": "OPGD pad"
+  },
+  "short": "hand wire J2 pin 2 (5V_PROT) -> J2 pin 3 (PGND)",
+  "vin": 22.0,
+  "psu_limit": 4.2,
+  "results": {
+    "mdepth": "1.0000E+06",
+    "timebase": "1.000000E-1 MAIN",
+    "before": {
+      "ch1": 20.779,
+      "ch2": 5.031,
+      "ch3": 5.046,
+      "ch4": 4.992
+    },
+    "sample_us": 2.0,
+    "after_short": {
+      "ch1": 20.784,
+      "ch2": 6.639,
+      "ch3": 2.514,
+      "ch4": 2.478
+    },
+    "auto_recovered": false,
+    "after_powercycle": {
+      "ch1": 20.779,
+      "ch2": 5.029,
+      "ch3": 5.046,
+      "ch4": 4.992
+    },
+    "powercycle_recovered": true,
+    "iin_after_mA": 18.0,
+    "trips_ms_peakV": [],
+    "n_trips": 0,
+    "vbuck_peak_raw": 5.2,
+    "vbuck_peak_10us": 5.14,
+    "vin_min_10us": 13.26,
+    "vbuck_min_10us": 3.007,
+    "vin_pre": 22.09,
+    "opgd_low_at_ms": null
+  },
+  "end": "2026-11-22 02:33:33"
+}

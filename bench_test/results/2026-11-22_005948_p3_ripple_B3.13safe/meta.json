@@ -1,0 +1,17 @@
+{
+  "name": "p3_ripple_B3.13safe",
+  "start": "2026-11-22 00:59:48",
+  "setup": "CH2 1x + ground spring held across the cap, AC, 20 MHz BW, 10 mV/div, 2 us/div; laptop on battery",
+  "results": {
+    "B3.13": {
+      "where": "C21 (VBUCK)",
+      "total_mVpp": 57.37,
+      "fundamental_mVpp": 52.73,
+      "f300k_mVpk": 24.21,
+      "vin": 22.0,
+      "iin": 0.473,
+      "load": 1.891
+    }
+  },
+  "end": "2026-11-22 01:00:09"
+}

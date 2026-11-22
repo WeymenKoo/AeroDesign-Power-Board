@@ -1,0 +1,2 @@
+00:51:33  scope capture saved: scope\B3.1_noisefloor.png
+00:51:41  RESULTS {"B3.1_noisefloor": {"where": "its OWN spring: push the probe TIP onto the spring's ground tip, then rest it on C4 GND pad", "total_mVpp": NaN, "fundamental_mVpp": 21.6, "f300k_mVpk": 1.08, "vin": 16.8, "iin": 0.016, "load": 0.003}}

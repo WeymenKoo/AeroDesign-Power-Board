@@ -1,0 +1,23 @@
+{
+  "name": "p3_sw",
+  "start": "2026-11-22 00:25:33",
+  "probe_map": {
+    "CH1": "point 1 VIN",
+    "CH2": "point 3 SW, ground G3, full BW",
+    "CH3": "J4 VSRV",
+    "CH4": "point 11 OPGD"
+  },
+  "results": {
+    "B3.7": {
+      "vin": 12.0,
+      "load": 1.891,
+      "freq_kHz": 308.79,
+      "duty": 0.43,
+      "vpp": 14.06,
+      "psu_v": 12.0,
+      "psu_i": 0.8417,
+      "psu_i_max": 0.842
+    }
+  },
+  "end": "2026-11-22 00:26:02"
+}

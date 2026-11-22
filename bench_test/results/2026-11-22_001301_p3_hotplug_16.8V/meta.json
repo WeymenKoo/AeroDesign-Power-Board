@@ -1,0 +1,20 @@
+{
+  "name": "p3_hotplug_16.8V",
+  "start": "2026-11-22 00:13:01",
+  "override": true,
+  "vin": 16.8,
+  "probe": "CH1 point 1, 10x, ground lead to G2, full BW",
+  "method": "hand touch, no load",
+  "metrics": {
+    "vin_set": 16.8,
+    "vin_psu": 16.8,
+    "end_of_window": 17.525,
+    "peak": 30.47,
+    "ratio": 1.814,
+    "overshoot_V": 13.67,
+    "ring_MHz": 1.96,
+    "sample_ns": 3.2,
+    "points": 10000
+  },
+  "end": "2026-11-22 00:13:19"
+}

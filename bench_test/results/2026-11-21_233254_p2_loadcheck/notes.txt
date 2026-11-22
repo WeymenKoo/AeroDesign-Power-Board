@@ -1,0 +1,3 @@
+23:33:10  0.10 A: e-load 0.105 A, PSU 0.089 A at 7.4 V, VSRV(scope) 5.014 V
+23:33:17  0.50 A: e-load 0.507 A, PSU 0.370 A at 7.4 V, VSRV(scope) 5.003 V
+23:33:17  ABORTED: PSU I 0.370 A > trip 0.080 A

@@ -1,0 +1,2 @@
+t,iout,r1_pads_mV,ina_inputs_mV,R1_mOhm,R_sense_loop_mOhm,extra_copper_mOhm,predicted_sensitivity_VperA,isns_scope,vsrv_scope,psu_v,psu_i,psu_i_max
+1795336427.361,1.8885,9.46,9.45,5.009,5.004,-0.005,0.1001,2.8987,4.9789,12.0,0.842,0.842

@@ -1,0 +1,136 @@
+{
+  "name": "p3_loadstep",
+  "start": "2026-11-22 01:40:42",
+  "codes": [
+    36,
+    711
+  ],
+  "probes": {
+    "CH2": "VBUCK_OUT pad by L1",
+    "CH3": "J4 pin 1 5V_PROT",
+    "CH4": "SRV_Isns pad"
+  },
+  "results": {
+    "B3.19_loadstep_7.4V_load": {
+      "vin": 7.4,
+      "edge": "load",
+      "vsrv": {
+        "peak_dev_mV": 9.3,
+        "t_peak_us": 83.8,
+        "settle_10mV_us": 0.0,
+        "ring_cycles": 88,
+        "step_mV": 0.3
+      },
+      "vbuck": {
+        "peak_dev_mV": 10.3,
+        "t_peak_us": 95.8,
+        "settle_10mV_us": 127.0,
+        "ring_cycles": 47,
+        "step_mV": 0.4
+      },
+      "i_edge_10_90_us": 1.0,
+      "i_step_A": 0.05
+    },
+    "B3.19_loadstep_7.4V_release": {
+      "vin": 7.4,
+      "edge": "release",
+      "vsrv": {
+        "peak_dev_mV": 9.3,
+        "t_peak_us": 83.8,
+        "settle_10mV_us": 0.0,
+        "ring_cycles": 88,
+        "step_mV": 0.3
+      },
+      "vbuck": {
+        "peak_dev_mV": 10.3,
+        "t_peak_us": 95.8,
+        "settle_10mV_us": 127.0,
+        "ring_cycles": 47,
+        "step_mV": 0.4
+      },
+      "i_edge_10_90_us": 2.0,
+      "i_step_A": 0.05
+    },
+    "B3.19_loadstep_16.8V_load": {
+      "vin": 16.8,
+      "edge": "load",
+      "vsrv": {
+        "peak_dev_mV": 2.2,
+        "t_peak_us": 47.8,
+        "settle_10mV_us": 0.0,
+        "ring_cycles": 0,
+        "step_mV": -0.3
+      },
+      "vbuck": {
+        "peak_dev_mV": 3.7,
+        "t_peak_us": 156.8,
+        "settle_10mV_us": 0.0,
+        "ring_cycles": 0,
+        "step_mV": -0.1
+      },
+      "i_edge_10_90_us": 1.2,
+      "i_step_A": 0.013
+    },
+    "B3.19_loadstep_16.8V_release": {
+      "vin": 16.8,
+      "edge": "release",
+      "vsrv": {
+        "peak_dev_mV": 2.2,
+        "t_peak_us": 47.8,
+        "settle_10mV_us": 0.0,
+        "ring_cycles": 0,
+        "step_mV": -0.3
+      },
+      "vbuck": {
+        "peak_dev_mV": 3.7,
+        "t_peak_us": 156.8,
+        "settle_10mV_us": 0.0,
+        "ring_cycles": 0,
+        "step_mV": -0.1
+      },
+      "i_edge_10_90_us": 0.2,
+      "i_step_A": 0.013
+    },
+    "B3.19_loadstep_22V_load": {
+      "vin": 22.0,
+      "edge": "load",
+      "vsrv": {
+        "peak_dev_mV": -1.6,
+        "t_peak_us": 16.0,
+        "settle_10mV_us": 0.0,
+        "ring_cycles": 0,
+        "step_mV": 0.2
+      },
+      "vbuck": {
+        "peak_dev_mV": 3.6,
+        "t_peak_us": 111.0,
+        "settle_10mV_us": 0.0,
+        "ring_cycles": 0,
+        "step_mV": 0.2
+      },
+      "i_edge_10_90_us": 11.0,
+      "i_step_A": 0.013
+    },
+    "B3.19_loadstep_22V_release": {
+      "vin": 22.0,
+      "edge": "release",
+      "vsrv": {
+        "peak_dev_mV": -1.6,
+        "t_peak_us": 16.0,
+        "settle_10mV_us": 0.0,
+        "ring_cycles": 0,
+        "step_mV": 0.2
+      },
+      "vbuck": {
+        "peak_dev_mV": 3.6,
+        "t_peak_us": 111.0,
+        "settle_10mV_us": 0.0,
+        "ring_cycles": 0,
+        "step_mV": 0.2
+      },
+      "i_edge_10_90_us": 0.2,
+      "i_step_A": 0.013
+    }
+  },
+  "end": "2026-11-22 01:41:35"
+}

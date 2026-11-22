@@ -1,0 +1,4 @@
+23:35:38  start falling from VSET 6.00 V, e-load 0.5 A
+23:36:49  scope capture saved: scope\B2.3_uvlo_fall.png
+23:36:53  TURN-OFF at VSET 5.58 V (previous step 5.60 V still on). e-load switched OFF. Now: PSU 5.58 V / 0.0 A, VIN(CH1 fit) 5.692, VBUCK -0.028, IPGD -0.05
+23:36:53  HOLDING: read VIN at point 1 with the DMM now.

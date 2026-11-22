@@ -1,0 +1,6 @@
+23:42:48  scope capture saved: scope\B2.5_ovp_trip.png
+23:42:48  OV TRIP between PSU 24.90 V (on, Iin 0.126 A) and 24.92 V (off). Board VIN 24.920-24.952 V
+23:44:39  scope capture saved: scope\B2.6_ovp_recover.png
+23:44:39  RECOVERED between PSU 23.02 V (still off) and 23.00 V (on, Iin 0.134 A). Board VIN 23.030-23.050 V
+23:44:39  e-load after test: armed=True i=0.507 flags=none
+23:44:44  End: 12.0 V, e-load OFF, board ON.

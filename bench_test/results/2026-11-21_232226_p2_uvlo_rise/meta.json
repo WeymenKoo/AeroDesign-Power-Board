@@ -1,0 +1,11 @@
+{
+  "name": "p2_uvlo_rise",
+  "start": "2026-11-21 23:22:26",
+  "probe_map": {
+    "CH1": "point 1 VIN (10 V/div, fitted)",
+    "CH2": "point 4 VBUCK",
+    "CH3": "J4 VSRV",
+    "CH4": "point 9 IPGD"
+  },
+  "end": "2026-11-21 23:22:39"
+}

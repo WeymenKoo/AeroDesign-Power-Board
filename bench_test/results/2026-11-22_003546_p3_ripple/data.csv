@@ -1,0 +1,6 @@
+t,step,where,total_mVpp,fundamental_mVpp,vin,iin,load
+1795332977.97,B3.1_noisefloor,"its OWN spring ground (tip touching the spring), resting on C4 GND pad",46.51,45.62,16.8,0.61,1.888
+1795332993.828,B3.10_vsrv_ripple_16V8_1A9,"C4 (VSRV output cap, + pad to - pad)",69.65,52.11,16.8,0.61,1.89
+1795333015.354,B3.12_vsrv_ripple_22V_1A9,C4 (VSRV output cap),53.65,50.39,22.0,0.473,1.889
+1795333030.765,B3.13_vbuck_ripple_22V_1A9,C21 (VBUCK cap next to L1),43.91,43.68,22.0,0.473,1.889
+1795333045.107,B3.14,point 1 / G1 (CH1 10x clip),477.08,454.24,16.8,0.61,

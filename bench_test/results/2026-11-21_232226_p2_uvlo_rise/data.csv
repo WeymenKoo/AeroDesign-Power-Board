@@ -1,0 +1,2 @@
+t,vset,psu_v,psu_i,psu_i_max,vin_ch1,vbuck,vsrv,ipgd,load_i,load_armed,load_flags
+1795328558.998,5.5,5.5,0.0,0.0,5.581,-0.032,-0.0424,-0.0488,0.004,False,none

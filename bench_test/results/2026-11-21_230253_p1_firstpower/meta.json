@@ -1,0 +1,27 @@
+{
+  "name": "p1_firstpower",
+  "start": "2026-11-21 23:02:53",
+  "eload_status": {
+    "i": 0.0029257627881554833,
+    "p": 0.0,
+    "armed": false,
+    "flags": "none",
+    "dac": 0,
+    "frac": 0.0,
+    "t_left": null,
+    "msg": "",
+    "locked": false,
+    "connected": true,
+    "on": false,
+    "i_set": 0.0,
+    "v_dut": null,
+    "idn": "ELOAD-REVA-SAFE,0.2.0,Nov 21 2026 21:35:08"
+  },
+  "probe_map": {
+    "CH1": "point 1 VIN (D23)",
+    "CH2": "point 4 VBUCK",
+    "CH3": "J4 pin 1 VSRV",
+    "CH4": "point 11 OPGD"
+  },
+  "end": "2026-11-21 23:03:20"
+}

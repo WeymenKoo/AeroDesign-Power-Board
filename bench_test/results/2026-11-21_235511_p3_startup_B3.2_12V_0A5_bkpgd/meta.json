@@ -1,0 +1,42 @@
+{
+  "name": "p3_startup_B3.2_12V_0A5_bkpgd",
+  "start": "2026-11-21 23:55:11",
+  "vin": 12.0,
+  "load_a": 0.5,
+  "psu_ilim": 0.8,
+  "probe_map": {
+    "CH1": "point 1 VIN",
+    "CH2": "point 4 VBUCK",
+    "CH3": "J4 VSRV",
+    "CH4": "BKPGD"
+  },
+  "method": "hand-touched + lead, GND permanently connected",
+  "metrics": {
+    "psu_after": {
+      "psu_v": 12.0,
+      "psu_i": 0.24,
+      "psu_i_max": 0.24
+    },
+    "eload_after": {
+      "i": 0.5053210301257114,
+      "armed": true,
+      "flags": "none"
+    },
+    "vin_final_scope": 11.755,
+    "vbuck_final": 5.0265,
+    "vsrv_final": 5.0017,
+    "ch4_final": 7.401,
+    "vbuck_start_ms": 3.612,
+    "vbuck_rise_10_90_ms": 2.95,
+    "vbuck_peak_raw": 5.2502,
+    "vbuck_peak_smoothed": 5.1608,
+    "vbuck_overshoot_mV": 134.3,
+    "vsrv_peak_smoothed": 5.0204,
+    "t_vsrv_4v75_ms": 9.574,
+    "vsrv_min_after_up": 2.604,
+    "hiccup": true,
+    "t_ch4_high_ms": 6.834,
+    "vin_bounces": 0
+  },
+  "end": "2026-11-21 23:55:43"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "p3_sw",
+  "start": "2026-11-22 00:17:01",
+  "probe_map": {
+    "CH1": "point 1 VIN",
+    "CH2": "point 3 SW, ground G3, full BW",
+    "CH3": "J4 VSRV",
+    "CH4": "point 11 OPGD"
+  },
+  "results": {},
+  "end": "2026-11-22 00:17:19"
+}

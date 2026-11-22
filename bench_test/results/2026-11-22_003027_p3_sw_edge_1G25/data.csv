@@ -1,0 +1,2 @@
+t,step,load,psu_v,psu_i,psu_i_max,VMAX_n,VMAX_worst,VMAX_median,VMIN_n,VMIN_worst,VMIN_median,srate
+1795332656.982,B3.8_1G25,1.889,22.0,0.473,0.473,20,23.41,23.29,20,-2.02,-1.82,1.250000E+9

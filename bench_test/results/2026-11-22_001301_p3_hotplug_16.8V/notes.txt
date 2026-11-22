@@ -1,0 +1,4 @@
+00:13:03  >>> ARMED: 16.8 V on the flying lead, no load. TOUCH NOW (scope WAIT). 60 s.
+00:13:18  captured; PSU 16.8 V / 0.018 A; PSU OFF - safe to release
+00:13:18  scope capture saved: scope\B3.6_hotplug_16.8V.png
+00:13:18  METRICS {"vin_set": 16.8, "vin_psu": 16.8, "end_of_window": 17.525, "peak": 30.47, "ratio": 1.814, "overshoot_V": 13.67, "ring_MHz": 1.96, "sample_ns": 3.2, "points": 10000}

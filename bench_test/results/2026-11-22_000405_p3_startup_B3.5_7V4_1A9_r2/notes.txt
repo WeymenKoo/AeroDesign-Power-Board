@@ -1,0 +1,6 @@
+00:04:07  e-load armed at 1.9 A before power (rail dead)
+00:04:08  >>> ARMED: 7.4 V live on the flying lead, limit 2.0 A. TOUCH NOW (scope shows WAIT). Waiting 60 s.
+00:04:12  captured. 1 s later: PSU 7.4 V / 1.398 A, e-load 1.891 A armed=True flags=none
+00:04:12  e-load OFF, PSU OFF - safe to release the lead
+00:04:12  scope capture saved: scope\B3.5_7V4_1A9_r2.png
+00:04:13  METRICS {"psu_after": {"psu_v": 7.4, "psu_i": 1.398, "psu_i_max": 1.406}, "eload_after": {"i": 1.89091084461306, "armed": true, "flags": "none"}, "vin_final_scope": 7.211, "vbuck_final": 5.0214, "vsrv_final": 4.9665, "ch4_final": 4.924, "vbuck_start_ms": 3.888, "vbuck_rise_10_90_ms": 2.936, "vbuck_peak_raw": 5.1806, "vbuck_peak_smoothed": 5.0526, "vbuck_overshoot_mV": 31.2, "vsrv_peak_smoothed": 4.9767, "t_vsrv_4v75_ms": 10.304, "vsrv_min_after_up": 4.866, "hiccup": false, "t_ch4_high_ms": 11.256, "vin_bounces": 0}

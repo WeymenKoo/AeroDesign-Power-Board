@@ -1,0 +1,5 @@
+23:23:36  going to 5.00 V (below UVLO-fall) from 5.50 V, limit 1.000 A, then 5.50 V
+23:23:46  e-load armed at 0.50 A (DUT rail still off)
+23:24:33  scope capture saved: scope\B2.1_uvlo_rise.png
+23:24:37  TURN-ON at VSET 6.00 V (previous step 5.98 V off). Now ON: PSU 6.0 V / 0.015 A, VIN(CH1 fit) 6.093 V, VBUCK 5.028, IPGD 4.98, load 0.004 A armed=True flags=none
+23:24:37  HOLDING: read VIN at point 1 with the DMM now.

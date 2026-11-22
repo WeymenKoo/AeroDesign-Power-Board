@@ -1,0 +1,42 @@
+{
+  "name": "p3_startup_B3.5_7V4_1A9_r2",
+  "start": "2026-11-22 00:04:05",
+  "vin": 7.4,
+  "load_a": 1.9,
+  "psu_ilim": 2.0,
+  "probe_map": {
+    "CH1": "point 1 VIN",
+    "CH2": "point 4 VBUCK",
+    "CH3": "J4 VSRV",
+    "CH4": "OPGD"
+  },
+  "method": "hand-touched + lead, GND permanently connected",
+  "metrics": {
+    "psu_after": {
+      "psu_v": 7.4,
+      "psu_i": 1.398,
+      "psu_i_max": 1.406
+    },
+    "eload_after": {
+      "i": 1.89091084461306,
+      "armed": true,
+      "flags": "none"
+    },
+    "vin_final_scope": 7.211,
+    "vbuck_final": 5.0214,
+    "vsrv_final": 4.9665,
+    "ch4_final": 4.924,
+    "vbuck_start_ms": 3.888,
+    "vbuck_rise_10_90_ms": 2.936,
+    "vbuck_peak_raw": 5.1806,
+    "vbuck_peak_smoothed": 5.0526,
+    "vbuck_overshoot_mV": 31.2,
+    "vsrv_peak_smoothed": 4.9767,
+    "t_vsrv_4v75_ms": 10.304,
+    "vsrv_min_after_up": 4.866,
+    "hiccup": false,
+    "t_ch4_high_ms": 11.256,
+    "vin_bounces": 0
+  },
+  "end": "2026-11-22 00:04:13"
+}

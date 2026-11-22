@@ -1,0 +1,2 @@
+23:22:28  going to 5.00 V (below UVLO-fall) from 22.00 V, limit 1.000 A, then 5.50 V
+23:22:39  ABORTED: e-load ON: ERR WriteFile failed (PermissionError(13, 'Access is denied.', None, 5))

@@ -1,0 +1,7 @@
+t,step,vin,edge,vsrv_peak_dev_mV,vsrv_t_peak_us,vsrv_settle_10mV_us,vsrv_ring_cycles,vsrv_step_mV,vbuck_peak_dev_mV,vbuck_t_peak_us,vbuck_settle_10mV_us,vbuck_ring_cycles,vbuck_step_mV,i_edge_us,i_step_A
+1795336931.834,B3.19_loadstep_7.4V_load,7.4,load,-51.5,5.6,144.0,0,-54.3,-67.9,6.6,146.4,0,-21.9,86.8,1.556
+1795336936.89,B3.19_loadstep_7.4V_release,7.4,release,-65.3,0.4,27.2,0,103.0,-60.8,0.2,179.8,0,78.9,13.6,1.448
+1795336948.141,B3.19_loadstep_16.8V_load,16.8,load,-52.6,8.6,139.6,0,-51.6,-69.4,15.0,158.2,3,-18.9,70.8,1.559
+1795336953.151,B3.19_loadstep_16.8V_release,16.8,release,46.1,14.6,149.6,0,58.2,64.4,23.4,150.0,0,24.3,85.0,1.551
+1795336964.623,B3.19_loadstep_22V_load,22.0,load,-59.1,32.2,130.2,0,-44.3,-64.3,31.6,179.8,9,-12.1,18.8,1.565
+1795336969.647,B3.19_loadstep_22V_release,22.0,release,54.2,34.4,136.0,0,47.4,55.8,33.6,137.6,0,13.9,47.2,1.564

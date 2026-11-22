@@ -1,0 +1,18 @@
+{
+  "name": "p4_short_r2",
+  "start": "2026-11-22 02:32:34",
+  "probes": {
+    "CH1": "D23 top pad VIN",
+    "CH2": "VBUCK_OUT pad by L1",
+    "CH3": "J4 pin 1 5V_PROT",
+    "CH4": "OPGD pad"
+  },
+  "short": "hand wire J2 pin 2 (5V_PROT) -> J2 pin 3 (PGND)",
+  "vin": 22.0,
+  "psu_limit": 4.2,
+  "results": {
+    "mdepth": "1.0000E+06",
+    "timebase": "1.000000E-1 MAIN"
+  },
+  "end": "2026-11-22 02:32:41"
+}

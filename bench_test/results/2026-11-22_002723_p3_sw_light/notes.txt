@@ -1,0 +1,5 @@
+00:27:35  scope capture saved: scope\B3.9_sw_12V_0.0A.png
+00:27:41  scope capture saved: scope\B3.9_sw_12V_0.1A.png
+00:27:48  scope capture saved: scope\B3.9_sw_12V_0.5A.png
+00:27:54  scope capture saved: scope\B3.9_sw_12V_1.9A.png
+00:27:56  RESULTS {"0.0A": {"freq_kHz": 686.25, "vpp": 13.55, "psu_i": 0.019}, "0.1A": {"freq_kHz": 1009.67, "vpp": 13.94, "psu_i": 0.061}, "0.5A": {"freq_kHz": 655.18, "vpp": 14.12, "psu_i": 0.237}, "1.9A": {"freq_kHz": 308.88, "vpp": 14.28, "psu_i": 0.841}}

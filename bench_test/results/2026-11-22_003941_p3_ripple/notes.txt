@@ -1,0 +1,6 @@
+00:40:00  scope capture saved: scope\B3.1_noisefloor.png
+00:40:37  scope capture saved: scope\B3.10_vsrv_ripple_16V8_1A9.png
+00:41:01  scope capture saved: scope\B3.12_vsrv_ripple_22V_1A9.png
+00:41:42  scope capture saved: scope\B3.13_vbuck_ripple_22V_1A9.png
+00:41:56  scope capture saved: scope\B3.14_vin_ripple_16V8_1A9.png
+00:42:01  RESULTS {"B3.1_noisefloor": {"where": "its OWN spring ground (tip touching the spring), resting on C4 GND pad", "total_mVpp": 48.79, "fundamental_mVpp": 45.7, "vin": 16.8, "iin": 0.61, "load": 1.889}, "B3.10_vsrv_ripple_16V8_1A9": {"where": "C4 (VSRV output cap, + pad to - pad)", "total_mVpp": 43.91, "fundamental_mVpp": 43.72, "vin": 16.8, "iin": 0.61, "load": 1.889}, "B3.12_vsrv_ripple_22V_1A9": {"where": "C4 (VSRV output cap)", "total_mVpp": 72.73, "fundamental_mVpp": 50.17, "vin": 22.0, "iin": 0.473, "load": 1.889}, "B3.13_vbuck_ripple_22V_1A9": {"where": "C21 (VBUCK cap next to L1)", "total_mVpp": 68.34, "fundamental_mVpp": 67.57, "vin": 22.0, "iin": 0.473, "load": 1.887}, "B3.14_vin_ripple_16V8_1A9": {"where": "point 1 / G1 (CH1 10x clip)", "total_mVpp": 476.87, "fundamental_mVpp": 454.26, "vin": 16.8, "iin": 0.609}}

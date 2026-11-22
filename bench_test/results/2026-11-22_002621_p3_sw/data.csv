@@ -1,0 +1,2 @@
+t,step,vin,load,peak_max,peak_median,n,undershoot_min,psu_v,psu_i,psu_i_max
+1795332415.891,B3.8,22.0,1.891,24.86,24.22,20,nan,22.0,0.473,0.473

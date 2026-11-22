@@ -1,0 +1,6 @@
+23:02:54  B1.1: 5.00 V, limit 0.100 A, output ON
+23:03:02  B1.2: arm single-shot, step 5.00 -> 7.40 V, limit 0.200 A
+23:03:04  turn-on capture triggered: True
+23:03:05  scope capture saved: scope\B1.2_firstpower_7V4.png
+23:03:20  B1.2 Iin 19.0 mA (limit 50). Scope means (approx, DMM is the reference): VIN 5.99 V, VBUCK 5.027 V, VSRV 5.017 V, OPGD nan V
+23:03:20  PSU left ON at 7.40 V / 0.200 A for DMM readings B1.3-B1.7.

@@ -1,0 +1,3 @@
+00:25:48  scope capture saved: scope\B3.7_sw_freq_12V_1A9.png
+00:25:56  scope capture saved: scope\B3.8_sw_edge_22V_1A9.png
+00:26:02  ABORTED: scope did not arm

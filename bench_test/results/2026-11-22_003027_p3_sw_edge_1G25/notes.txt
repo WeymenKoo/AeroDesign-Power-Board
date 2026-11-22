@@ -1,0 +1,8 @@
+00:30:35  scope capture saved: scope\B3.8_sw_rise_22V_1A9_1G25.png
+00:30:37  scope capture saved: scope\B3.8_sw_rise_22V_1A9_1G25.png
+00:30:38  scope capture saved: scope\B3.8_sw_rise_22V_1A9_1G25.png
+00:30:43  scope capture saved: scope\B3.8_sw_rise_22V_1A9_1G25.png
+00:30:45  scope capture saved: scope\B3.8_sw_fall_22V_1A9_1G25.png
+00:30:46  scope capture saved: scope\B3.8_sw_fall_22V_1A9_1G25.png
+00:30:47  scope capture saved: scope\B3.8_sw_fall_22V_1A9_1G25.png
+00:31:00  RESULTS {"VMAX": {"n": 20, "worst": 23.41, "median": 23.29}, "VMIN": {"n": 20, "worst": -2.02, "median": -1.82}, "srate": "1.250000E+9"}

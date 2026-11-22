@@ -1,0 +1,5 @@
+t,step,where,total_mVpp,fundamental_mVpp,f300k_mVpk,vin,iin
+1795333522.782,B3.14,point 1 / G1 (CH1 10x clip),121.72,92.65,37.72,16.8,0.61
+1795333592.991,B3.1_noisefloor,"its OWN spring ground (tip touching the spring), resting on C4 GND pad",nan,44.91,3.96,16.8,0.61
+1795333648.207,B3.10_vsrv_ripple_16V8_1A9,"C4 (VSRV output cap, + pad to - pad)",15.29,13.97,6.52,16.8,0.61
+1795333667.572,B3.12_vsrv_ripple_22V_1A9,C4 (VSRV output cap),16.32,15.38,7.26,22.0,0.473

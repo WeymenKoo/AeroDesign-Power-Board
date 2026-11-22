@@ -1,0 +1,1 @@
+02:27:10  ABORTED: e-load link not healthy: connected=False age=621.83 s

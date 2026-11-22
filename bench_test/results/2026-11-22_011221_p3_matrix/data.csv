@@ -1,0 +1,2 @@
+t,vin_set,load_set,psu_v,psu_i,vin_board,vbuck_scope,vsrv_scope,isns_scope,load_i,vsrv_dmm,r1_mV,isns_dmm,vb_minus_vs_mV
+1795335370.569,7.4,0.0,7.4,0.023,7.564,5.0315,5.04,2.4832,0.0075,5.059,0.3,2.533,
