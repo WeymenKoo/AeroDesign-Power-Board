@@ -1,5 +1,5 @@
 """Power Board Rev3 bench helpers: KA3005P + DHO804 (drivers reused from the DC Load Box project) and the e-load
-through eload_gui_remote.py (TCP 127.0.0.1:50555).
+through the e-load GUI's localhost command port (TCP 127.0.0.1:50555).
 
 Safety model
   * Hard PSU limits here: V <= 22.0 V (25.7 V only with allow_ovp_test=True), I <= 2.0 A.

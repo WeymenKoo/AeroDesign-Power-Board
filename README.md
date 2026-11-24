@@ -12,7 +12,7 @@ characterization: what it does, how close it is to its design, and where its lim
 | Schematic (PDF) | [`docs/PowerBoard_Rev3_schematic.pdf`](docs/PowerBoard_Rev3_schematic.pdf) |
 | Test log (every step, limit, verdict and note) | [`bench_test/PowerBoard_Rev3_BenchTest_Log.xlsx`](bench_test/PowerBoard_Rev3_BenchTest_Log.xlsx) |
 | Original DVT/EOL test plan | [`bench_test/AeroDesign_PowerBoard_DVT_EOL_Test_Plan.xlsx`](bench_test/AeroDesign_PowerBoard_DVT_EOL_Test_Plan.xlsx) |
-| Automation scripts (PSU, scope, load) | [`bench_test/tools/`](bench_test/tools) |
+| Instrument layer (PSU, scope, load, safety monitor) | [`bench_test/tools/bench_lib.py`](bench_test/tools/bench_lib.py) |
 | Raw data and scope captures | [`bench_test/results/`](bench_test/results), [`bench_test/scope/`](bench_test/scope) |
 | Scope captures, labelled and annotated (all 35) | [`bench_test/scope_annotated/`](bench_test/scope_annotated) |
 | Probe and bodge-wire map | [`bench_test/probe_point_map.png`](bench_test/probe_point_map.png) |
@@ -79,7 +79,7 @@ The short-circuit test goes far beyond that. What is still untested is listed at
 
 ## Test cases
 
-Every scope capture below is the raw screenshot with a title, the test conditions, a channel legend (signal, probe point, scale) and call-outs added by [`annotate_scope.py`](bench_test/tools/annotate_scope.py). The originals are in [`bench_test/scope/`](bench_test/scope). Where the same run was also logged as data, its Python plot sits next to the capture.
+Every scope capture below is the raw screenshot with a title, the test conditions, a channel legend (signal, probe point, scale) and call-outs. The originals are in [`bench_test/scope/`](bench_test/scope). Where the same run was also logged as data, its Python plot sits next to the capture.
 
 
 ### 1. Input protection thresholds
